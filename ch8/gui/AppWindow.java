@@ -73,7 +73,7 @@ public class AppWindow extends JFrame implements MenuListener,ActionListener{
             validate();
         }
         else if(e.getSource()==selfMenu){
-            self.selfMenu();
+            
             
         }
     }
