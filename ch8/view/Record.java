@@ -35,6 +35,7 @@ public class Record extends JDialog implements ActionListener{
         p.add(confirm);
         p.add(cancel);
         add(p);
+        
         setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
     }
     public void setGrade(String grade){

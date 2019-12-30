@@ -42,6 +42,7 @@ public class AppWindow extends JFrame implements MenuListener,ActionListener{
         gradeOne.addMenuListener(this);
         gradeTwo.addMenuListener(this);
         gradeThree.addMenuListener(this);
+        selfMenu.addMenuListener(this);
 
         gradeOneList.addActionListener(this);
         gradeTwoList.addActionListener(this);
@@ -73,22 +74,28 @@ public class AppWindow extends JFrame implements MenuListener,ActionListener{
             validate();
         }
         else if(e.getSource()==selfMenu){
-            
-            
+            self=new SelfMenu();
+            int row=self.getRow();
+            int column=self.getColumn();
+            int mineCount=self.getMineCount();
+            // System.out.println(row+1000);
+            mineArea.initMineArea(row,column,mineCount,"self");
+            setBounds(500, 30,50*row,50*column);
+            validate();
         }
     }
     public void menuCanceled(MenuEvent e){}
     public void menuDeselected(MenuEvent e){}
     public void actionPerformed(ActionEvent e){
-        if(e.getSource()==gradeOneList){
+        if(e.getSource().equals(gradeOneList)){
             showHeroRecord.setGrade(gradeOne.getText());
             showHeroRecord.ShowRecord();
         }
-        else if(e.getSource()==gradeTwoList){
+        else if(e.getSource().equals(gradeTwoList)){
             showHeroRecord.setGrade(gradeTwo.getText());
             showHeroRecord.ShowRecord();
         }
-        else if(e.getSource()==gradeThreeList){
+        else if(e.getSource().equals(gradeThreeList)){
             showHeroRecord.setGrade(gradeThree.getText());
             showHeroRecord.ShowRecord();
         }

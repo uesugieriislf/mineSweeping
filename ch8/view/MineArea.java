@@ -23,7 +23,7 @@ public class MineArea extends JPanel implements ActionListener, MouseListener {
     Timer time;
     int spendTime = 0;
     Record record;
-    PlayMusic playMusic;
+    PlayMusic playMusic,relaxMusic,tipMusic;
 
     public MineArea(int row, int column, int mineCount, String grade) {
         record = new Record();
@@ -53,7 +53,10 @@ public class MineArea extends JPanel implements ActionListener, MouseListener {
         add(pCenter, BorderLayout.CENTER);
         playMusic = new PlayMusic();
         playMusic.setClipFile("static/sound/mine.wav");
-
+        relaxMusic=new PlayMusic();
+        relaxMusic.setClipFile("static/sound/mine.wav");
+        tipMusic=new PlayMusic();
+        tipMusic.setClipFile("static/sound/mine.wav");
     }
 
     public void initMineArea(int row, int column, int mineCount, String grade) {
@@ -158,6 +161,7 @@ public class MineArea extends JPanel implements ActionListener, MouseListener {
                     viewForBlock.seeBlockNameOrIcon();// view display the data of block
                     System.out.println("ookk");
                 }
+                relaxMusic.playMusic();
             }
         }
         if (e.getSource() == reStart)
@@ -189,13 +193,14 @@ public class MineArea extends JPanel implements ActionListener, MouseListener {
                         block[i][j].setIsMark(false);
                         markMount=markMount+1;
                         showMarkedMineCount.setText(""+markMount);
+                        tipMusic.playMusic();
 
                     }else{
                         source.setIcon(mark);
                         block[i][j].setIsMark(true);
                         markMount=markMount-1;
                         showMarkedMineCount.setText(""+markMount);
-
+                        tipMusic.playMusic();
                     }
                 }
             }
