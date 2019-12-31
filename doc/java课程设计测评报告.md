@@ -76,33 +76,33 @@
 
 **1.运行扫雷程序**
 
-<img src="C:\Users\asus\Pictures\打开.PNG" alt="打开" style="zoom:80%;" />
+<img src="..\static\doc\打开.PNG" alt="打开" style="zoom:80%;" />
 
 **2.鼠标随机点击**
 
-<img src="C:\Users\asus\Pictures\第一步.PNG" alt="第一步" style="zoom:80%;" />
+<img src="..\static\doc\第一步.PNG" alt="第一步" style="zoom:80%;" />
 
 **3.继续点击完成游戏**
 
-<img src="C:\Users\asus\Pictures\第二步.PNG" alt="第二步" style="zoom:80%;" />
+<img src="..\static\doc\第二步.PNG" alt="第二步" style="zoom:80%;" />
 
 
 
-<img src="C:\Users\asus\Pictures\第四步.PNG" alt="第四步" style="zoom:80%;" />
+<img src="..\static\doc\第四步.PNG" alt="第四步" style="zoom:80%;" />
 
-<img src="C:\Users\asus\Pictures\第五步.PNG" alt="第五步" style="zoom:80%;" />
+<img src="..\static\doc\第五步.PNG" alt="第五步" style="zoom:80%;" />
 
 **4.扫雷完成**
 
-<img src="C:\Users\asus\Pictures\最后.PNG" alt="最后" style="zoom:80%;" />
+<img src="..\static\doc\最后.PNG" alt="最后" style="zoom:80%;" />
 
 **5.点击红旗显示地雷**
 
-<img src="C:\Users\asus\Pictures\雷.PNG" alt="雷" style="zoom:80%;" />
+<img src="..\static\doc\雷.PNG" alt="雷" style="zoom:80%;" />
 
 **6.显示英雄榜**
 
-<img src="C:\Users\asus\Pictures\java.PNG" alt="java" style="zoom:80%;" />
+<img src="..\static\doc\java.PNG" alt="java" style="zoom:80%;" />
 
 ## 2.5 扫雷判断表
 
