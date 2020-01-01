@@ -54,9 +54,9 @@ public class MineArea extends JPanel implements ActionListener, MouseListener {
         playMusic = new PlayMusic();
         playMusic.setClipFile("static/sound/mine.wav");
         relaxMusic=new PlayMusic();
-        relaxMusic.setClipFile("static/sound/mine.wav");
+        relaxMusic.setClipFile("static/sound/relax.wav");
         tipMusic=new PlayMusic();
-        tipMusic.setClipFile("static/sound/mine.wav");
+        tipMusic.setClipFile("static/sound/tip.wav");
     }
 
     public void initMineArea(int row, int column, int mineCount, String grade) {
