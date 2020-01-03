@@ -1,4 +1,4 @@
-<center><strong>扫雷游戏测试报告<strong></strong>
+<center><font face="黑体" size=8>扫雷游戏测试报告</font></strong>
 
 # 一  引言
 
